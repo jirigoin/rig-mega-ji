@@ -1,8 +1,9 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
+closed: 2026-11-09
 ---
 
 # Morning digest
@@ -77,3 +78,20 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Issues
+
+On GitHub: https://github.com/jirigoin/rig-mega-ji/issues?q=label%3Aplan%3Amorning-digest
+
+| # | Issue | Blocked by | Worker | Closed |
+|---|-------|-----------|--------|--------|
+| 1 | Digest types: DigestRow and the readNight signature | — | claude.ai · claude-opus-5-5 · low | 2026-11-09 |
+| 2 | Run log reader | #1 | claude.ai · claude-opus-5-5 · low | 2026-11-09 |
+| 3 | Digest page: GET /digest/:night | #1 | claude.ai · claude-opus-5-5 · low | 2026-11-09 |
+| 4 | Digest JSON: GET /api/digest/:night | #1 | claude.ai · claude-opus-5-5 · low | 2026-11-09 |
+| 5 | Status board: link each night to its digest | #1 | claude.ai · claude-opus-5-5 · low | 2026-11-09 |
+| 6 | Route tests for the digest page and JSON | #2, #3, #4 | claude.ai · claude-opus-5-5 · low | 2026-11-09 |
+| 7 | Preview of /digest/2026-10-28 for review | #2, #3 | claude.ai · claude-opus-5-5 · low | 2026-11-09 |
+| 8 | Clean up: take the lane marker off the preview, archive the plan | #7 | claude.ai · claude-opus-5-5 · low | 2026-11-09 |
+
+The preview was at https://jirigoin.github.io/rig-preview/ (repo jirigoin/rig-preview); its lane marker was taken off after the review. See ADR 0003.
